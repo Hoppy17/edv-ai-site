@@ -1,3 +1,4 @@
+import Hero from "./components/Hero";
 function IconWeb() {
   return (
     <svg viewBox="0 0 24 24" className="h-6 w-6 flex-none" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -38,6 +39,7 @@ function IconLightbulb() {
 export default function App() {
   return (
     <div className="min-h-screen bg-white text-neutral-900">
+      <Hero />
       <header className="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-neutral-200">
         <nav className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
           <a href="#" className="font-semibold tracking-tight">EDV AI Solutions</a>
