@@ -6,9 +6,6 @@ export default function App() {
     <>
       <main>
         <Hero />
-        {/* --- Services (coming soon) --- */}
-        {/* --- About (coming soon) --- */}
-        {/* --- Contact (coming soon) --- */}
       </main>
       <Footer />
     </>
