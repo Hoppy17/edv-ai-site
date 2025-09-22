@@ -12,11 +12,10 @@ export default function Hero() {
       }}
     >
       <h1 style={{ fontSize: 32, lineHeight: 1.2, marginBottom: 12 }}>
-        EDV AI Solutions
+        Friendly, Local AI Suppport, Tailored to Your Business. 
       </h1>
       <p style={{ fontSize: 18, lineHeight: 1.6, marginBottom: 20 }}>
-        Practical AI help for local businesses. Simple websites, smarter
-        workflows, and hands-on support—so you can focus on the work that pays.
+       AI solutions by a local, for locals, easy to understand, tailored to how you actually work, and built to future proof your business.
       </p>
       <a
         href={CALENDLY_URL}
