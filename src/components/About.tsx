@@ -11,7 +11,7 @@ export default function About() {
     >
       <h2 style={{ fontSize: 24, marginBottom: 12 }}>About</h2>
       <p style={{ fontSize: 16, lineHeight: 1.6 }}>
-        EDV AI Solutions is a local, practical partner for small businesses. We keep things simple, fast, and useful so you can focus on work that pays.
+        I’m Glen, now living on the Mid North Coast after a career as an ADF medic and in healthcare planning. Those experiences showed me how critical planning, adaptability, and the right tools are to getting the job done. Now I’m a small-business enabler: I coach you through the options, set up the essentials, and leave you confident—not dependent—with plain-English education and advice on practical AI and clean web tools.
       </p>
     </section>
   );
