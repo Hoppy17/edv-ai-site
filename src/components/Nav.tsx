@@ -31,7 +31,7 @@ export default function Nav() {
           padding: "12px 16px"
         }}
       >
-        <div style={{ fontWeight: 700 }}>EDV</div>
+        <div style={{ fontWeight: 700 }}>EDV AI Solutions</div>
         <div style={{ display: "flex", gap: 12 }}>
           {items.map((i) => (
             <button
