@@ -4,6 +4,7 @@ const CALENDLY_URL =
 export default function Hero() {
   return (
     <section style={{ padding: "48px 16px", maxWidth: 960, margin: "0 auto" }}>
+      <img src="/favicon-edv.svg" alt="EDV icon" width={40} height={40} />
       <h1 style={{ fontSize: 32, lineHeight: 1.2, marginBottom: 12 }}>
         EDV AI Solutions
       </h1>
