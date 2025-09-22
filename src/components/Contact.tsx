@@ -1,6 +1,14 @@
 export default function Contact() {
   return (
-    <section style={{ padding: "32px 16px", maxWidth: 960, margin: "0 auto" }}>
+    <section
+      id="contact"
+      style={{
+        padding: "32px 16px",
+        maxWidth: 960,
+        margin: "0 auto",
+        scrollMarginTop: 72
+      }}
+    >
       <h2 style={{ fontSize: 24, marginBottom: 12 }}>Contact</h2>
       <p style={{ fontSize: 16, lineHeight: 1.6, marginBottom: 16 }}>
         Email: <a href="mailto:glen@edvgroup.com.au">glen@edvgroup.com.au</a>
@@ -24,3 +32,4 @@ export default function Contact() {
     </section>
   );
 }
+
