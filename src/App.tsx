@@ -8,6 +8,9 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <>
+    <div style={{ backgroundColor: '#f5f5f5', textAlign: 'center', padding: '4px', fontSize: '14px' }}>
+  🚧 Under Construction — EDV AI Solutions is live but still in progress.
+</div>
       <Nav />
       <main>
         <Hero />
