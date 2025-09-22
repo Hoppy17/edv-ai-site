@@ -11,7 +11,7 @@ export default function Services() {
     >
       <h2 style={{ fontSize: 24, marginBottom: 12 }}>Services</h2>
       <p style={{ fontSize: 16, lineHeight: 1.6 }}>
-        Admin & Workflow Automation · Smarter Websites · Templates & Tools · Coaching & Consulting
+        EDV AI Solutions helps local businesses move forward with confidence in AI. We coach, train, and educate teams, run practical AI audits, and design custom tools so you can work independently and get real results.
       </p>
     </section>
   );
