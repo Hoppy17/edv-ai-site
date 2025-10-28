@@ -4,40 +4,39 @@ export default function Hero() {
   return (
     <section
       id="home"
+      className="bg-gradient-to-br from-green-50 via-white to-emerald-100 animate-gradient-slow"
       style={{
         padding: "48px 16px",
         maxWidth: 960,
         margin: "0 auto",
-        scrollMarginTop: 72
+        scrollMarginTop: 72,
       }}
     >
-      <h1
-        className="text-center leading-tight mb-3"
-        style={{ fontSize: 32, lineHeight: 1.2, marginBottom: 12 }}
-      >
-        Friendly, Local AI Support
-        <br />
-        Tailored to Your Business
-      </h1>
-      <p style={{ fontSize: 18, lineHeight: 1.6, marginBottom: 20 }}>
-       AI solutions by a local, for locals, easy to understand, tailored to how you actually work, and built to future proof your business.
-      </p>
-      <a
-        href={CALENDLY_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{
-          display: "inline-block",
-          padding: "12px 16px",
-          borderRadius: 8,
-          border: "1px solid #222",
-          textDecoration: "none",
-          fontWeight: 600
-        }}
-        aria-label="Book a free 15-minute AI chat with Glen"
-      >
-        Book Free 15-min Call
-      </a>
+      <div className="text-center animate-fade-in">
+        <h1
+          className="leading-tight mb-4 text-4xl md:text-5xl font-bold"
+          style={{ lineHeight: 1.2, marginBottom: 12 }}
+        >
+          <span className="text-emerald-700">Friendly, Local AI Support</span>
+          <br />
+          Tailored to Your Business
+        </h1>
+        <p
+          className="text-lg md:text-xl mb-6"
+          style={{ lineHeight: 1.6, marginBottom: 20 }}
+        >
+          AI solutions by a local, for locals, easy to understand, tailored to how
+          you actually work, and built to future proof your business.
+        </p>
+        <a
+          href={CALENDLY_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-xl shadow-md transition"
+        >
+          Book A Discovery Call
+        </a>
+      </div>
     </section>
   );
 }
