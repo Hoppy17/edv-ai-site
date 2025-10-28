@@ -21,9 +21,9 @@ export default function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const buttonClass =
-    "fixed bottom-4 right-4 bg-brand-primary hover:bg-brand-dark text-white rounded-full p-3 shadow-md transition-opacity duration-300 " +
-    (showButton ? "opacity-100" : "opacity-0");
+  const buttonClass = showButton
+    ? "fixed bottom-4 right-4 bg-brand-primary hover:bg-brand-dark text-white rounded-full p-3 shadow-md transition-opacity duration-300 opacity-100"
+    : "fixed bottom-4 right-4 bg-brand-primary hover:bg-brand-dark text-white rounded-full p-3 shadow-md transition-opacity duration-300 opacity-0";
 
   return (
     <>
@@ -42,6 +42,14 @@ export default function App() {
       >
         ↑
       </button>
+      <a
+        href="https://calendly.com/glen-edvgroup/discovery-call"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-20 right-4 md:hidden bg-brand-primary hover:bg-brand-dark text-white px-6 py-3 rounded-xl shadow-md transition font-semibold"
+      >
+        👋 Let’s Talk AI
+      </a>
     </>
   );
 }
