@@ -11,8 +11,13 @@ export default function Hero() {
         scrollMarginTop: 72
       }}
     >
-      <h1 style={{ fontSize: 32, lineHeight: 1.2, marginBottom: 12 }}>
-        Friendly, Local AI Suppport, Tailored to Your Business. 
+      <h1
+        className="text-center leading-tight mb-3"
+        style={{ fontSize: 32, lineHeight: 1.2, marginBottom: 12 }}
+      >
+        Friendly, Local AI Support
+        <br />
+        Tailored to Your Business
       </h1>
       <p style={{ fontSize: 18, lineHeight: 1.6, marginBottom: 20 }}>
        AI solutions by a local, for locals, easy to understand, tailored to how you actually work, and built to future proof your business.
