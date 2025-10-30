@@ -1,5 +1,3 @@
-const CALENDLY_URL = "https://calendly.com/glen-edvgroup/discovery-call";
-
 export default function Footer() {
   const year = new Date().getFullYear();
   return (
@@ -9,7 +7,7 @@ export default function Footer() {
         borderTop: "1px solid #eee",
         textAlign: "center",
         fontSize: 14,
-        color: "#122e22"
+        color: "#122e22",
       }}
     >
       <small>© {year} EDV Group — Coffs Harbour, NSW</small>
