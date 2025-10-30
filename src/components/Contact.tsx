@@ -23,7 +23,8 @@ export default function Contact() {
           borderRadius: 8,
           border: "1px solid #222",
           textDecoration: "none",
-          fontWeight: 600
+          fontWeight: 600,
+          color: "#000"
         }}
         aria-label="Book a free 15-minute AI chat with Glen"
       >
@@ -32,4 +33,3 @@ export default function Contact() {
     </section>
   );
 }
-
