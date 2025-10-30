@@ -30,8 +30,8 @@ export default function App() {
       <Nav />
       <main>
         <Hero />
-        <Services />
         <About />
+        <Services />
         <Contact />
       </main>
       <Footer />
