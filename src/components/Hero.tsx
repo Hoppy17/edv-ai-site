@@ -11,11 +11,27 @@ export default function Hero() {
         scrollMarginTop: 72
       }}
     >
-      <h1 style={{ fontSize: 32, lineHeight: 1.2, marginBottom: 12 }}>
-        Friendly, Local AI Suppport, Tailored to Your Business. 
+      <h1
+        style={{
+          fontSize: 32,
+          lineHeight: 1.2,
+          marginBottom: 12,
+          textAlign: "center"
+        }}
+      >
+        <span style={{ display: "block" }}>Friendly</span>
+        <span style={{ display: "block" }}>Local AI Support</span>
+        <span style={{ display: "block" }}>Tailored to Your Business</span>
       </h1>
-      <p style={{ fontSize: 18, lineHeight: 1.6, marginBottom: 20 }}>
-       AI solutions by a local, for locals, easy to understand, tailored to how you actually work, and built to future proof your business.
+      <p
+        style={{
+          fontSize: 18,
+          lineHeight: 1.6,
+          marginBottom: 20,
+          textAlign: "center"
+        }}
+      >
+        AI solutions by a local, for locals, easy to understand, tailored to how you actually work, and built to future proof your business.
       </p>
       <a
         href={CALENDLY_URL}
@@ -27,7 +43,8 @@ export default function Hero() {
           borderRadius: 8,
           border: "1px solid #222",
           textDecoration: "none",
-          fontWeight: 600
+          fontWeight: 600,
+          color: "#000"
         }}
         aria-label="Book a free 15-minute AI chat with Glen"
       >
