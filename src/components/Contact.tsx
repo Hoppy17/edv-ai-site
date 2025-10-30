@@ -9,7 +9,15 @@ export default function Contact() {
         href="https://calendly.com/glen-edvgroup/discovery-call"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block bg-brand-primary hover:bg-brand-dark text-black px-6 py-3 rounded-xl shadow-md transition font-semibold"
+        style={{
+          display: "inline-block",
+          padding: "12px 16px",
+          borderRadius: 8,
+          border: "1px solid #222",
+          textDecoration: "none",
+          fontWeight: 600,
+          color: "#000"
+        }}
         aria-label="Book a free 15-minute AI chat with Glen"
       >
         Book Free 15-min Call
