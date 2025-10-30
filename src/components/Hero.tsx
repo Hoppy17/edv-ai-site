@@ -4,12 +4,8 @@ export default function Hero() {
   return (
     <section
       id="home"
-      style={{
-        padding: "48px 16px",
-        maxWidth: 960,
-        margin: "0 auto",
-        scrollMarginTop: 72
-      }}
+      className="bg-gradient-to-br from-green-50 via-white to-emerald-100 animate-gradient-slow py-12 md:py-20 px-4 text-center flex flex-col items-center"
+      style={{ maxWidth: 960, margin: "0 auto", scrollMarginTop: 72 }}
     >
       <h1
         style={{
@@ -48,7 +44,7 @@ export default function Hero() {
         }}
         aria-label="Book a free 15-minute AI chat with Glen"
       >
-        Book Free 15-min Call
+        Book Free 15-Min Call
       </a>
     </section>
   );

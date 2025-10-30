@@ -1,17 +1,9 @@
 export default function Contact() {
   return (
-    <section
-      id="contact"
-      style={{
-        padding: "32px 16px",
-        maxWidth: 960,
-        margin: "0 auto",
-        scrollMarginTop: 72
-      }}
-    >
-      <h2 style={{ fontSize: 24, marginBottom: 12 }}>Contact</h2>
-      <p style={{ fontSize: 16, lineHeight: 1.6, marginBottom: 16 }}>
-        Email: <a href="mailto:glen@edvgroup.com.au">glen@edvgroup.com.au</a>
+    <section id="contact" className="py-8 px-4 max-w-5xl mx-auto scroll-mt-20">
+      <h2 className="text-2xl font-semibold mb-3 text-brand-dark">Contact</h2>
+      <p className="text-base leading-relaxed mb-4">
+        Email: <a href="mailto:glen@edvgroup.com.au" className="underline text-brand-dark">glen@edvgroup.com.au</a>
       </p>
       <a
         href="https://calendly.com/glen-edvgroup/discovery-call"
