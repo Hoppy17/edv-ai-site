@@ -4,7 +4,7 @@ export default function Services() {
   return (
     <section id="services" className="py-12 md:py-20 text-center bg-[#faf9f6]">
       <div className="flex flex-col items-center space-y-10">
-        <Bubble title="💬 WTF is AI (and what’s an AI Audit anyway?)">
+        <Bubble title="💬 What the heck is AI (and what’s an AI Audit anyway?)">
           <p>Think of an AI Audit as a friendly, plain-English review of how your business runs — what’s working, what’s clunky, and where smarter tools could make life easier.</p>
           <p>We’ll sit down (or jump on a call) and look at the everyday stuff: your emails, workflows, apps, and the bits that chew up time. Then I’ll map out where AI might fit — safely, simply, and only if it actually helps.</p>
           <p>You’ll get a clear action plan that shows what’s worth doing now, what can wait, and what’s not worth touching.</p>
