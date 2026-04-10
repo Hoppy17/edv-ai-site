@@ -389,7 +389,7 @@ body {
 .section-heading .label {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
-  color: #2C3B28;
+  color: #4A6741;
   text-transform: none;
   letter-spacing: normal;
   margin-bottom: 0.5rem;
@@ -399,7 +399,7 @@ body {
 .section-heading h2 {
   font-size: 18px;
   font-weight: 500;
-  color: #4A6741;
+  color: #2C3B28;
   margin-bottom: 0.5rem;
   line-height: 1.5;
 }
