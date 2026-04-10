@@ -387,11 +387,11 @@ body {
 }
 
 .section-heading h2 {
-  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
   color: var(--text);
   margin-bottom: 0.5rem;
-  line-height: 1.25;
+  line-height: 1.15;
 }
 
 .section-heading p {
@@ -426,7 +426,7 @@ body {
 }
 
 .step-num {
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -654,6 +654,11 @@ body {
   font-size: 1.05rem;
   color: var(--muted);
   line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+.mission-card p:last-child {
+  margin-bottom: 0;
 }
 
 /* =============================================
