@@ -33,6 +33,28 @@ if (toggle && navLinks) {
   });
 }
 
+// Accordion — one open at a time per list
+document.querySelectorAll('.accordion-list').forEach((list) => {
+  list.querySelectorAll('.accordion-trigger').forEach((trigger) => {
+    trigger.addEventListener('click', () => {
+      const item = trigger.closest('.accordion-item');
+      const isOpen = item.classList.contains('open');
+
+      // Close all in this list
+      list.querySelectorAll('.accordion-item').forEach((el) => {
+        el.classList.remove('open');
+        el.querySelector('.accordion-trigger').setAttribute('aria-expanded', 'false');
+      });
+
+      // Open clicked one if it was closed
+      if (!isOpen) {
+        item.classList.add('open');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+});
+
 // Mark active nav link based on current path
 const path = window.location.pathname.replace(/\/$/, '') || '/';
 document.querySelectorAll('.nav-links a').forEach((link) => {
