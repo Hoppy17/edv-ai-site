@@ -386,12 +386,22 @@ body {
   margin-bottom: 2.5rem;
 }
 
-.section-heading h2 {
+.section-heading .label {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
   color: var(--text);
+  text-transform: none;
+  letter-spacing: normal;
   margin-bottom: 0.5rem;
   line-height: 1.15;
+}
+
+.section-heading h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
 }
 
 .section-heading p {
