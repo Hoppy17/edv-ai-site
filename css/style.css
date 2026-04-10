@@ -389,7 +389,7 @@ body {
 .section-heading .label {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
-  color: var(--text);
+  color: #8DB882;
   text-transform: none;
   letter-spacing: normal;
   margin-bottom: 0.5rem;
