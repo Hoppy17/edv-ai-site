@@ -33,25 +33,21 @@ if (toggle && navLinks) {
   });
 }
 
-// Accordion — one open at a time per list
-document.querySelectorAll('.accordion-list').forEach((list) => {
-  list.querySelectorAll('.accordion-trigger').forEach((trigger) => {
-    trigger.addEventListener('click', () => {
-      const item = trigger.closest('.accordion-item');
-      const isOpen = item.classList.contains('open');
+// Expandable cards — one open at a time per grid group
+document.querySelectorAll('.expand-card').forEach((card) => {
+  card.addEventListener('click', () => {
+    const isOpen = card.classList.contains('open');
+    const group = card.closest('.grid-3, .process-grid');
 
-      // Close all in this list
-      list.querySelectorAll('.accordion-item').forEach((el) => {
-        el.classList.remove('open');
-        el.querySelector('.accordion-trigger').setAttribute('aria-expanded', 'false');
-      });
+    // Close all in this group
+    if (group) {
+      group.querySelectorAll('.expand-card.open').forEach((el) => el.classList.remove('open'));
+    }
 
-      // Open clicked one if it was closed
-      if (!isOpen) {
-        item.classList.add('open');
-        trigger.setAttribute('aria-expanded', 'true');
-      }
-    });
+    // Open this one if it was closed
+    if (!isOpen) {
+      card.classList.add('open');
+    }
   });
 });
 

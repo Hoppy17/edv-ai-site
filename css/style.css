@@ -406,21 +406,23 @@ body {
    ============================================= */
 
 .process-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 }
 
 .step-card {
   background: var(--surface);
   border-radius: 16px;
   border: 1px solid var(--border);
-  overflow: hidden;
-  transition: box-shadow 0.2s ease;
+  padding: 1.75rem;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .step-card:hover {
-  box-shadow: 0 4px 16px rgba(44, 44, 44, 0.07);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(44, 44, 44, 0.09);
 }
 
 .step-num {
@@ -430,7 +432,7 @@ body {
   text-transform: uppercase;
   color: var(--amber);
   display: block;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 
 .step-card h4 {
@@ -438,7 +440,7 @@ body {
   font-weight: 600;
   color: var(--text);
   line-height: 1.3;
-  margin: 0;
+  margin-bottom: 0.5rem;
 }
 
 .step-card p {
@@ -448,135 +450,58 @@ body {
 }
 
 /* =============================================
-   Accordion (service cards + process steps)
+   Expandable cards
    ============================================= */
 
-.accordion-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.accordion-item {
-  background: var(--surface);
-  border-radius: 16px;
-  border: 1px solid var(--border);
-  overflow: hidden;
-  transition: box-shadow 0.2s ease;
-}
-
-.accordion-item:hover {
-  box-shadow: 0 4px 16px rgba(44, 44, 44, 0.07);
-}
-
-.accordion-item.open {
-  box-shadow: 0 8px 24px rgba(44, 44, 44, 0.09);
-}
-
-.accordion-trigger {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 1.5rem 1.75rem;
-  background: none;
-  border: none;
+.expand-card {
+  position: relative;
   cursor: pointer;
-  text-align: left;
-  font-family: var(--font);
 }
 
-.accordion-trigger-left {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex: 1;
-  min-width: 0;
-}
-
-.accordion-icon-wrap {
-  width: 40px;
-  height: 40px;
-  background: rgba(74, 103, 65, 0.1);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--green);
-  flex-shrink: 0;
-  transition: background 0.2s ease;
-}
-
-.accordion-item.open .accordion-icon-wrap {
-  background: rgba(74, 103, 65, 0.18);
-}
-
-.accordion-title-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-}
-
-.accordion-eyebrow {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--amber);
-}
-
-.accordion-title {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--text);
-  line-height: 1.3;
-}
-
-.accordion-toggle {
-  width: 28px;
-  height: 28px;
+.expand-toggle {
+  position: absolute;
+  top: 1.1rem;
+  right: 1.1rem;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   border: 1px solid var(--border);
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-  color: var(--muted);
-  transition: transform 0.3s ease, background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
-  font-size: 18px;
-  line-height: 1;
+  font-size: 17px;
   font-weight: 300;
+  line-height: 1;
+  color: var(--muted);
+  pointer-events: none;
+  user-select: none;
+  transition: transform 0.3s ease, background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
-.accordion-item.open .accordion-toggle {
+.expand-card.open .expand-toggle {
   transform: rotate(45deg);
   background: var(--green);
   border-color: var(--green);
   color: #fff;
 }
 
-.accordion-body {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.3s ease;
-}
-
-.accordion-item.open .accordion-body {
-  grid-template-rows: 1fr;
-}
-
-.accordion-body-inner {
+.card-detail {
+  max-height: 0;
   overflow: hidden;
+  transition: max-height 0.35s ease;
 }
 
-.accordion-body-content {
-  padding: 0 1.75rem 1.5rem;
-  font-size: 0.9rem;
+.expand-card.open .card-detail {
+  max-height: 220px;
+}
+
+.card-detail-inner {
+  padding-top: 0.85rem;
+  margin-top: 0.85rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.875rem;
   color: var(--muted);
   line-height: 1.7;
-  border-top: 1px solid var(--border);
-  padding-top: 1.25rem;
 }
 
 /* =============================================
