@@ -89,13 +89,13 @@ body {
 }
 
 .nav-brand img {
-  height: 90px;
+  height: 130px;
   width: auto;
   border-radius: 6px;
   object-fit: contain;
   position: relative;
   z-index: 20;
-  margin-bottom: -30px;
+  margin-bottom: -45px;
 }
 
 .brand-text {
