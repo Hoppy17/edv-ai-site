@@ -91,7 +91,7 @@ body {
 .nav-brand img {
   height: 160px;
   width: auto;
-  border-radius: 0;
+  border-radius: 12px;
   background: transparent;
   border: none;
   box-shadow: none;
