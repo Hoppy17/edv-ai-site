@@ -76,7 +76,7 @@ body {
 
 .nav-brand {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 10px;
   text-decoration: none;
   color: var(--text);
@@ -89,17 +89,17 @@ body {
 }
 
 .nav-brand img {
-  height: 56px;
+  height: 90px;
   width: auto;
   border-radius: 6px;
   object-fit: contain;
   position: relative;
-  z-index: 10;
-  margin-bottom: -10px;
+  z-index: 20;
+  margin-bottom: -30px;
 }
 
 .brand-text {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--text);
   white-space: nowrap;
